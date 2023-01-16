@@ -1,9 +1,14 @@
 import 'package:flutter/material.dart';
 import 'author_card.dart';
 
-class Card2 extends StatelessWidget {
+class Card2 extends StatefulWidget {
   const Card2({super.key});
 
+  @override
+  State<Card2> createState() => _Card2State();
+}
+
+class _Card2State extends State<Card2> {
   @override
   Widget build(BuildContext context) {
     return Center(
