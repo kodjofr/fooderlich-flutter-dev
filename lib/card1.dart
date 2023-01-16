@@ -16,14 +16,12 @@ class Card1 extends StatelessWidget {
     return Center(
       child: Container(
         padding: const EdgeInsets.all(16),
-        //2
         constraints: const BoxConstraints.expand(
           width: 350,
           height: 450,
         ),
-        //3
+        
         decoration: const BoxDecoration(
-          //4
           image: DecorationImage(
             image: AssetImage('assets/mag1.png'),
             fit: BoxFit.cover,
@@ -72,6 +70,5 @@ class Card1 extends StatelessWidget {
         ),
       )
     );
-    return const Placeholder();
   }
 }
