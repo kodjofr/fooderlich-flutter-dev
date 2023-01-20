@@ -1,25 +1,25 @@
 import 'package:flutter/material.dart';
-import 'fooderlich_theme.dart';
-import 'card1.dart';
-import 'card2.dart';
+
+
+import 'components/card1.dart';
+import 'components/card2.dart';
+import 'components/card3.dart';
 
 class Home extends StatefulWidget {
   const Home({super.key});
 
   @override
-  // ignore: library_private_types_in_public_api
-  _HomeState createState() => _HomeState();
+  HomeState createState() => HomeState();
 }
 
-class _HomeState extends State<Home> {
+class HomeState extends State<Home> {
   // Add state variables and functions
 
   int _selectedIndex = 0;
   static List<Widget> pages = <Widget>[
     const Card1(),
-    Container(color: Colors.red),
     const Card2(),
-    Container(color: Colors.green),
+    const Card3(),
     //Container(color: Colors.blue)
   ];
 
@@ -48,16 +48,16 @@ class _HomeState extends State<Home> {
         onTap: _onItemTapped,
         items: const <BottomNavigationBarItem>[
           BottomNavigationBarItem(
-            icon: Icon(Icons.card_giftcard),
-            label: 'Card',
+            icon: Icon(Icons.logo_dev_outlined),
+            label: 'Home',
           ),
           BottomNavigationBarItem(
-            icon: Icon(Icons.card_giftcard),
-            label: 'Card2',
+            icon: Icon(Icons.logo_dev_outlined),
+            label: 'Golden Cook',
           ),
           BottomNavigationBarItem(
-            icon: Icon(Icons.card_giftcard),
-            label: 'Card3',
+            icon: Icon(Icons.logo_dev_outlined),
+            label: 'Trends',
           ),
         ],
       ),
